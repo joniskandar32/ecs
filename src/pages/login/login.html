@@ -12,7 +12,7 @@
         <ion-card class="sudut">
           <ion-card-header style="background-color: #488aff">
             <p align="center" style="font-size: 24px; color: white">
-              <b>LOGIN</b>
+              <b>EMPLOYEE APP</b>
             </p>
           </ion-card-header>
 
@@ -44,9 +44,17 @@
             </ion-list>
 
             <div padding>
-              <button ion-button color="primary" icon-start>
+              <button
+                (click)="signIn()"
+                block
+                ion-button
+                color="primary"
+                icon-start
+              >
                 <ion-icon name="ios-log-in-outline"></ion-icon> Log In
               </button>
+              <br /><br />
+              <p align="center" style="color: #ccc">version 1.0</p>
             </div>
           </ion-card-content>
         </ion-card>

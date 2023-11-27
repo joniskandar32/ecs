@@ -11,10 +11,17 @@ import { LoginPage } from "../pages/login/login";
 
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
+import { HttpModule } from "@angular/http";
+import { IonicStorageModule } from "@ionic/storage";
 
 @NgModule({
   declarations: [MyApp, AboutPage, ContactPage, HomePage, TabsPage, LoginPage],
-  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
+  ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
